@@ -1,3 +1,5 @@
+A website to calculate complicated probabilities for MESBG-miniature game.
+
 Hello! This is my MESBG Probability Calculator version 1.0.0.
 
 I am lohikrme from github, here is my account: https://github.com/lohikrme
