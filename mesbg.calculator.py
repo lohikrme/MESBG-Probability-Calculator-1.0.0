@@ -1,5 +1,7 @@
 # MESBG Probability Calculator version 1.0.0
-# written by lohikrme, for Personal use only, all rights reserved!
+# All rights reserved. For personal use only!
+# Updated last time: 2/4/2023
+# written by: lohikrme
 
 
 # THE MATHEMATICAL BACKGROUND OF THIS CALCULATOR AND INTRODUCTION TO DIFFERENT FUNCTIONS:
