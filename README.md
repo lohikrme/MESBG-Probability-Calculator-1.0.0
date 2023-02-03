@@ -1,7 +1,5 @@
 Hello! This is my MESBG Probability Calculator version 1.0.0.
 
-I am lohikrme from github, here is my account: https://github.com/lohikrme
-
 Last updated: 4/2/2023
 
 All rights reserved. For personal use only.
