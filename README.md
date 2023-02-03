@@ -2,6 +2,8 @@ A website to calculate complicated probabilities for MESBG-miniature game.
 
 Hello! This is my MESBG Probability Calculator version 1.0.0.
 
+Last edited: 4/2/2023
+
 All rights reserved. For personal use only.
 
 So, this calculator contains next items: A python 3 based calculator in the backend,
