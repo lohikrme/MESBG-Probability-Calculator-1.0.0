@@ -1,6 +1,6 @@
 # MESBG Probability Calculator version 1.0.0
 
-# Updated last time: 2/4/2023
+# Updated last time: 10/4/2023
 
 # All rights reserved. For personal use only!
 
@@ -120,9 +120,15 @@ def equal_vs_equal(left_dice: int, left_elven_sword: bool, right_dice: int, righ
 
 def main():
     print(skilled_vs_weak(2,2))
-    print(skilled_vs_weak(2,2))
+    print(skilled_vs_weak(4,2))
+    print(skilled_vs_weak(2,4))
+    print(skilled_vs_weak(4,8))
     print(equal_vs_equal(2, False, 2, False))
-    print(skilled_vs_weak(3,6))
+    print(equal_vs_equal(2, False, 4, True))
+    print(equal_vs_equal(2, True, 4, False))
 
 
 main()
+
+print(f"5v3 {skilled_vs_weak(6,6)}")
+print(f"3v3 {equal_vs_equal(10, True,1, False)}")
