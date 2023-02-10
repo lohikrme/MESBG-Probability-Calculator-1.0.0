@@ -91,13 +91,18 @@ var winner_list = []
 // this function gets an onclick input from html and activates the calculator
 function activate_calculation() {
     console.log("Calculation begins...")
+    console.log(`Opponent A dice-amount: ${A_dice_amount}`)
+    console.log(`Opponent A fight-value: ${A_fight}`)
+    console.log(`Opponent A elven sword is: ${A_elven_sword_is_on}`)
+    console.log(`Opponent B dice-amount: ${B_dice_amount}`)
+    console.log(`Opponent B fight-value: ${B_fight}`)
+    console.log(`Opponent B elven sword is: ${B_elven_sword_is_on}`)
     calculate_answer(A_dice_amount, A_fight, A_elven_sword_is_on, B_dice_amount, B_fight, B_elven_sword_is_on)    
 }
 
 // this function has 3 separate ifs: A has higher F, B has higher F or both have equal F:
 // answer here are stored to variable winner_list
 function calculate_answer(A_dice_amount, A_fight, A_elven_sword_is_on, B_dice_amount, B_fight, B_elven_sword_is_on) {
-
     if (A_fight > B_fight) {
         function case1() {
             lista = skilled_vs_weak(A_dice_amount, B_dice_amount)
@@ -128,6 +133,7 @@ function calculate_answer(A_dice_amount, A_fight, A_elven_sword_is_on, B_dice_am
 }
 
 function print_answer() {
+    console.log("Calculation continues...")
     console.log(`Opponent A dice-amount: ${A_dice_amount}`)
     console.log(`Opponent A fight-value: ${A_fight}`)
     console.log(`Opponent A elven sword is: ${A_elven_sword_is_on}`)
