@@ -133,16 +133,10 @@ function calculate_answer(A_dice_amount, A_fight, A_elven_sword_is_on, B_dice_am
 }
 
 function print_answer() {
-    console.log("Calculation continues...")
-    console.log(`Opponent A dice-amount: ${A_dice_amount}`)
-    console.log(`Opponent A fight-value: ${A_fight}`)
-    console.log(`Opponent A elven sword is: ${A_elven_sword_is_on}`)
-    console.log(`Opponent B dice-amount: ${B_dice_amount}`)
-    console.log(`Opponent B fight-value: ${B_fight}`)
-    console.log(`Opponent B elven sword is: ${B_elven_sword_is_on}`)
+    console.log(`Calculation completed! A wins: ${A_and_B["Opponent_A"]} and B wins: ${A_and_B["Opponent_B"]}`)
     document.getElementById("answer1").innerHTML = `Probability that A wins: ${parseFloat((A_and_B["Opponent_A"]*100).toFixed(2))}%`
     document.getElementById("answer2").innerHTML = `Probability that B wins: ${parseFloat((A_and_B["Opponent_B"]*100).toFixed(2))}%`
-    console.log(`Calculation completed! A wins: ${A_and_B["Opponent_A"]} and B wins: ${A_and_B["Opponent_B"]}`)
+    
 }
 
 
