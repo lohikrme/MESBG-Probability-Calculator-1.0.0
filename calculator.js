@@ -78,7 +78,6 @@ function equal_vs_equal(left_dice, left_elven_sword, right_dice, right_elven_swo
 // these variables are the ones to return to html file
 // and calculate_answer() function gives value to the variables
 // elements are also listened because button  "calculate" has 2 effects
-const calculate_button = document.getElementById("test");
 
 // dict for winning % and base values, also a list to save values for later use
 var A_and_B = {
@@ -89,6 +88,7 @@ var A_and_B = {
 var winner_list = []
 
 // activate calculate_answer function
+const calculate_button = document.getElementById("test");
 calculate_button.addEventListener("click", activate_calculation);
 
 // this function activates calculate_answer function allowing to use all needed parameters
