@@ -97,7 +97,7 @@ function activate_calculation() {
 // this function has 3 separate ifs: A has higher F, B has higher F or both have equal F:
 // answer here are stored to variable winner_list
 function calculate_answer(A_dice_amount, A_fight, A_elven_sword_is_on, B_dice_amount, B_fight, B_elven_sword_is_on) {
-    console.log("Calculation continues...")
+
     if (A_fight > B_fight) {
         function case1() {
             lista = skilled_vs_weak(A_dice_amount, B_dice_amount)
@@ -117,7 +117,6 @@ function calculate_answer(A_dice_amount, A_fight, A_elven_sword_is_on, B_dice_am
     else if (A_fight == B_fight) {
         function case3() {
             lista = equal_vs_equal(A_dice_amount, A_elven_sword_is_on, B_dice_amount, B_elven_sword_is_on)
-            console.log(lista[0])
             return [lista[0], lista[1]]
         }
         winner_list = case3()
@@ -129,9 +128,15 @@ function calculate_answer(A_dice_amount, A_fight, A_elven_sword_is_on, B_dice_am
 }
 
 function print_answer() {
-    console.log("Calculation completed!")
+    console.log(`Opponent A dice-amount: ${A_dice_amount}`)
+    console.log(`Opponent A fight-value: ${A_fight}`)
+    console.log(`Opponent A elven sword is: ${A_elven_sword_is_on}`)
+    console.log(`Opponent B dice-amount: ${B_dice_amount}`)
+    console.log(`Opponent B fight-value: ${B_fight}`)
+    console.log(`Opponent B elven sword is: ${B_elven_sword_is_on}`)
     document.getElementById("answer1").innerHTML = `Probability that A wins: ${parseFloat((A_and_B["Opponent_A"]*100).toFixed(2))}%`
     document.getElementById("answer2").innerHTML = `Probability that B wins: ${parseFloat((A_and_B["Opponent_B"]*100).toFixed(2))}%`
+    console.log(`Calculation completed! A wins: ${A_and_B["Opponent_A"]} and B wins: ${A_and_B["Opponent_B"]}`)
 }
 
 
