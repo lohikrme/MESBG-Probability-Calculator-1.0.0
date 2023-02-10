@@ -19,13 +19,11 @@ var B_elven_sword_is_on = false
 
 
 // function for opponent A dice amount
-const A_dice_slider = document.getElementById("slider-A-dice");
-A_dice_slider.addEventListener("input", slider_A_dice_change_click);
-
 function slider_A_dice_change_click() {
     function slider_A_dice_change() {
         let value = document.getElementById("slider-A-dice").value
         document.getElementById("text-A-dice").innerHTML = `Dice-Amount: ${value}`
+        console.log(`Opponent A dice-amount: ${value}`)
         return value
     }
     A_dice_amount = slider_A_dice_change()
@@ -33,13 +31,11 @@ function slider_A_dice_change_click() {
 
 
 // function for opponent A fight value
-const A_fight_slider = document.getElementById("slider-A-fight");
-A_fight_slider.addEventListener("input", slider_A_fight_change_click);
-
 function slider_A_fight_change_click() {
     function slider_A_fight_change() {
         let value = document.getElementById("slider-A-fight").value
         document.getElementById("text-A-fight").innerHTML = `Fight-Value: ${value}`
+        console.log(`Opponent B fight-value: ${value}`)
         return value
     }
     A_fight = slider_A_fight_change()
@@ -64,13 +60,11 @@ function button_A_elven_sword_click() {
 
 
 // function for clicking opponent B dice amount
-const B_dice_slider = document.getElementById("slider-B-dice");
-B_dice_slider.addEventListener("input", slider_B_dice_change_click);
-
 function slider_B_dice_change_click() {
     function slider_B_dice_change() {
         let value = document.getElementById("slider-B-dice").value
         document.getElementById("text-B-dice").innerHTML = `Dice-Amount: ${value}`
+        console.log(`Opponent B dice-amount: ${value}`)
         return value
     }
     B_dice_amount = slider_B_dice_change()
@@ -78,13 +72,11 @@ function slider_B_dice_change_click() {
 
 
 // function for opponent B fight value
-const B_fight_slider = document.getElementById("slider-B-fight");
-B_fight_slider.addEventListener("input", slider_B_fight_change_click);
-
 function slider_B_fight_change_click() {
     function slider_B_fight_change() {
         let value = document.getElementById("slider-B-fight").value
         document.getElementById("text-B-fight").innerHTML = `Fight-Value: ${value}`
+        console.log(`Opponent B fight-value: ${value}`)
         return value
     }
     B_fight = slider_B_fight_change()

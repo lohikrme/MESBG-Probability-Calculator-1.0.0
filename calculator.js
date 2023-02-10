@@ -87,18 +87,17 @@ var A_and_B = {
 
 var winner_list = []
 
-// activate calculate_answer function
-const calculate_button = document.getElementById("test");
-calculate_button.addEventListener("click", activate_calculation);
 
-// this function activates calculate_answer function allowing to use all needed parameters
+// this function gets an onclick input from html and activates the calculator
 function activate_calculation() {
+    console.log("Calculation begins...")
     calculate_answer(A_dice_amount, A_fight, A_elven_sword_is_on, B_dice_amount, B_fight, B_elven_sword_is_on)    
 }
 
 // this function has 3 separate ifs: A has higher F, B has higher F or both have equal F:
 // answer here are stored to variable winner_list
 function calculate_answer(A_dice_amount, A_fight, A_elven_sword_is_on, B_dice_amount, B_fight, B_elven_sword_is_on) {
+    console.log("Calculation continues...")
     if (A_fight > B_fight) {
         function case1() {
             lista = skilled_vs_weak(A_dice_amount, B_dice_amount)
@@ -130,6 +129,7 @@ function calculate_answer(A_dice_amount, A_fight, A_elven_sword_is_on, B_dice_am
 }
 
 function print_answer() {
+    console.log("Calculation completed!")
     document.getElementById("answer1").innerHTML = `Probability that A wins: ${parseFloat((A_and_B["Opponent_A"]*100).toFixed(2))}%`
     document.getElementById("answer2").innerHTML = `Probability that B wins: ${parseFloat((A_and_B["Opponent_B"]*100).toFixed(2))}%`
 }
@@ -147,5 +147,3 @@ function tester() {
     console.log(equal_vs_equal(2, false, 4, true))
     console.log(equal_vs_equal(2, true, 4, false))
 }
-
-tester()
